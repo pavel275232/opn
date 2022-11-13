@@ -173,7 +173,7 @@ a{
     font-size: 64px;
 }
 .screen3-line-item{
-    margin-top: 100px;
+    margin-top: 200px;
     display: flex;
     align-items: flex-end;
 }
@@ -221,3 +221,7 @@ a{
     padding: 12px 25px;
 }
 /* ------------------------------------------- */
+
+.conatiner-screen4{
+    margin-top: 200px;
+}
