@@ -15,7 +15,9 @@ a{
     --orange:#ED7F22;
     --white:#FFFFFF;
     --font-size-header:32px;
-    --border-r:24px;
+    --border-r-sc1:24px;
+    --border-r-sc2:16px;
+    --border-r-sc3:24px;
 }
   /* ------------------ */
 .container-page{
@@ -30,7 +32,7 @@ a{
     align-items: center;
     padding: 16px 32px;
     background-color: var(--light-blue);
-    border-radius:var(--border-r);
+    border-radius:var(--border-r-sc1);
 }
 .header-logo{
     flex-grow: 1.7;
@@ -58,7 +60,7 @@ a{
     background-color: inherit;
     color: inherit;
     cursor: pointer;
-    border-radius:var(--border-r);
+    border-radius:var(--border-r-sc1);
     padding: 16px 32px;
 }
 .btn-enter:hover{
@@ -79,7 +81,7 @@ a{
     gap: 8px;
     background-color: var(--blue);
     width: 60vw;
-    border-radius:var(--border-r);
+    border-radius:var(--border-r-sc1);
 }
 .container-screen1-bot{
     display: flex;
@@ -89,7 +91,7 @@ a{
     padding: 20px 32px;
     background-color: var(--orange);
     width: 432px;
-    border-radius:var(--border-r);
+    border-radius:var(--border-r-sc1);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -107,7 +109,7 @@ a{
 .screen1-textblock3{
     background-color: var(--blue);
     margin-left: 32px;
-    border-radius: var(--border-r);
+    border-radius: var(--border-r-sc1);
     width: 80vw;
     display: flex;
     flex-direction: column;
@@ -117,44 +119,105 @@ a{
 }
 /* ---------------------------------------- */
 .conatiner-screen2{
-    margin-top: 200px;
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
 }
 .conatiner-screen2 h1{
     font-size: 64px;
+    font-weight: 400;
 }
 .screen2-line-item{
     display: flex;
-    margin: 32px 0;
     align-items: flex-end;
+    margin-top: 150px;
 }
-.screen2-line-item h3{font-size: 44px;}
-.screen2-line-item h4{font-size: 32px;}
+.screen2-line-item .h-3{
+    font-size: 44px;
+    font-weight: 500;
+    line-height: 120%;
+
+}
+.screen2-line-item .h-4{
+    font-size: 32px;
+    font-weight:400;
+    line-height: 120%;
+    margin-top: 16px;
+}
 
 .screen2-textblock1{
     background-color:var(--light-blue);
-    flex-grow: 1;
-    padding:0 32px;
-    padding-bottom: 72px;
-    border-radius: 16px;
+    border-radius: var(--border-r-sc2);
     margin-right: 32px;
-    height: 238px;
+    padding: 32px;
 }
 .screen2-textblock2{
     background-color:var(--blue);
-    flex-grow: 1;
-    padding: 0 32px;
-    padding-bottom: 72px;
-    border-radius: 16px;
+    border-radius:var(--border-r-sc2);
     margin-right: 32px;
-    height: 282px;
+    padding: 32px;
 }
 .screen2-textblock3{
     background-color:var(--orange);
-    flex-grow: 1;
-    padding: 0 32px;
-    padding-bottom: 72px;
-    border-radius: 16px;
-    height: 320px;
+    border-radius:var(--border-r-sc2);
+    padding: 32px;
 }
+/* --------------------------------------- */
+.conatiner-screen3{
+    margin-top: 200px;
+    background-color: var(--blue);
+    border-radius: var(--border-r-sc3);
+    padding: 32px;
+}
+.container-h1{
+    font-size: 64px;
+}
+.screen3-line-item{
+    margin-top: 100px;
+    display: flex;
+    align-items: flex-end;
+}
+.screen3-textblock1{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-size: 36px;
+    background-color: var(--white);
+    border-radius: var(--border-r-sc3);
+    padding: 32px 32px 24px;
+    margin-right: 32px;
+}
+.screen3-textblock2{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-size: 36px;
+    background-color: var(--white);
+    border-radius: var(--border-r-sc3);
+    padding: 32px 32px 24px;
+    margin-right: 32px;
+}
+.screen3-textblock3{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-size: 36px;
+    background-color: var(--white);
+    border-radius: var(--border-r-sc3);
+    padding: 32px 32px 24px;
+}
+.textb{
+    color: var(--blue);
+}
+.numb{
+    border-radius:64px;
+    background-color: var(--orange);
+    padding: 12px 25px;
+}
+/* ------------------------------------------- */
