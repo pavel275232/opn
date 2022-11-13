@@ -24,10 +24,11 @@ a{
 }
   /* ------------------ */
 .container-page{
-    height: 100vh;
     margin: 32px 48px 0 48px;
 }
 .container-header{
+    position: sticky;
+    top: 32px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
