@@ -70,7 +70,7 @@ a{
     border: 1px solid var(--white);
     transition: 0.5s;
 }
-/* ----------- */
+/* ----------------------------------- */
 .conatiner-screen1{
     padding: 32px 0;
     font-size: 120px;
@@ -109,6 +109,11 @@ a{
     width: 100%;
     cursor: pointer;
 }
+.screen1-textblock2:hover{
+    transition: .5s;
+    background-color: var(--light-blue);
+    box-shadow: inset 0 0 20px rgba(0,0,0,0.5);
+}
 .screen1-textblock3{
     background-color: var(--blue);
     margin-left: 32px;
@@ -125,6 +130,10 @@ a{
     margin-top: 100px;
     display: flex;
     flex-direction: column;
+}
+.conatiner-screen2 span{
+    color: var(--orange);
+    font-weight: 700;
 }
 .conatiner-screen2 h1{
     font-size: 64px;
@@ -247,9 +256,11 @@ details > summary{
 }
 summary:before {
     content: "+";
-    font-size:44px;
+    font-size:72px;
     font-weight: bold;
     margin: -5px 5px 0 0;
+    position: absolute;
+    right: 100px;
  }
   
  details[open] summary:before {
@@ -263,3 +274,24 @@ summary:before {
     border-radius: var(--border-r-sc5);
  }
  /* --------------------------------- */
+ footer{
+    margin-top: 100px;
+    padding:32px;
+    display: flex;
+    justify-content: space-between;
+    color: var(--blue);
+    font-size: 32px;
+    align-items: flex-end;
+ }
+ .license{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+ }
+ .icon-contact{
+    display: flex;
+ }
+ .icon-item{
+    margin-right: 20px;
+    cursor: pointer;
+ }
