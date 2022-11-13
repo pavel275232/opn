@@ -86,6 +86,9 @@ a{
     width: 53vw;
     border-radius:var(--border-r-sc1);
 }
+.blue-text{
+    color: var(--light-blue);
+}
 .container-screen1-bot{
     display: flex;
     margin-top: 32px;
