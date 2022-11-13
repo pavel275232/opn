@@ -9,6 +9,14 @@ a{
     color: inherit;
     text-decoration: none;
 }
+input{
+    color: inherit;
+    font-family: 'Roboto', sans-serif;
+}
+textarea{
+    color: inherit;
+    font-family: 'Roboto', sans-serif;
+}
 :root{
     --dark-blue: #000D20;
     --blue:#1A3967;
@@ -323,7 +331,8 @@ summary:before {
     outline: none;
     border: none;
     margin-bottom: 16px;
-
+    resize: none;
+    color:var(--blue)
 }
 .conatiner-screen5 button{
     background-color: var(--orange);
