@@ -24,7 +24,6 @@ a{
 }
   /* ------------------ */
 .container-page{
-    /* border: 1px solid white; */
     height: 100vh;
     margin: 32px 48px 0 48px;
 }
@@ -110,7 +109,7 @@ a{
     cursor: pointer;
 }
 .screen1-textblock2:hover{
-    transition: .5s;
+    transition: 1s;
     background-color: var(--light-blue);
     box-shadow: inset 0 0 20px rgba(0,0,0,0.5);
 }
@@ -272,7 +271,55 @@ summary:before {
     margin-top: 200px;
     background-color: var(--blue);
     border-radius: var(--border-r-sc5);
+    display: flex;
+    justify-content: space-between;
+    padding:32px ;
  }
+ .text-form{
+    flex-grow: 1;
+ }
+ .conatiner-screen5 .h-3{
+    font-size: 96px;
+ }
+ .conatiner-screen5 .h-4{
+    font-size:32px;
+ }
+.conatiner-screen5 form{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+.conatiner-screen5 input{
+    background-color: var(--white);
+    color: var(--blue);
+    font-size: 32px;
+    padding: 16px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+}
+::placeholder {
+    color:var(--light-blue);
+}
+#in3{
+    border-radius: 8px;
+    font-size: 32px;
+    padding: 16px;
+    outline: none;
+    border: none;
+    margin-bottom: 16px;
+
+}
+.conatiner-screen5 button{
+    background-color: var(--orange);
+    color: var(--white);
+    font-size: 44px;
+    padding: 40px;
+    border-radius: var(--border-r-sc5);
+    border: none;
+    cursor: pointer;
+}
  /* --------------------------------- */
  footer{
     margin-top: 100px;
