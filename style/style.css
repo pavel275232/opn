@@ -1,6 +1,46 @@
-@import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap'); */
+/* raleway-regular - latin_cyrillic */
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/raleway-v28-latin_cyrillic-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/raleway-v28-latin_cyrillic-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/raleway-v28-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/raleway-v28-latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/raleway-v28-latin_cyrillic-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/raleway-v28-latin_cyrillic-regular.svg#Raleway') format('svg'); /* Legacy iOS */
+  }
+  /* raleway-500 - latin_cyrillic */
+  @font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/raleway-v28-latin_cyrillic-500.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/raleway-v28-latin_cyrillic-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/raleway-v28-latin_cyrillic-500.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/raleway-v28-latin_cyrillic-500.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/raleway-v28-latin_cyrillic-500.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/raleway-v28-latin_cyrillic-500.svg#Raleway') format('svg'); /* Legacy iOS */
+  }
+  /* raleway-600 - latin_cyrillic */
+  @font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/raleway-v28-latin_cyrillic-600.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/raleway-v28-latin_cyrillic-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/raleway-v28-latin_cyrillic-600.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/raleway-v28-latin_cyrillic-600.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/raleway-v28-latin_cyrillic-600.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/raleway-v28-latin_cyrillic-600.svg#Raleway') format('svg'); /* Legacy iOS */
+  }
 body{
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Raleway', normal;
     background-color: var(--dark-blue);
     color: var(--white);
     user-select: none;
@@ -59,6 +99,10 @@ textarea{
     padding: 16px 32px;
     background-color: var(--light-blue);
     border-radius:var(--border-r-sc1);
+    font-weight: 500;
+}
+.Oo{
+    fill: orange;
 }
 .header-logo{
     flex-grow: 1.7;
@@ -98,6 +142,7 @@ textarea{
 .conatiner-screen1{
     padding: 32px 0;
     font-size: 120px;
+    font-weight: 600;
 }
 .screen1-textblock1{
     display: flex;
@@ -107,7 +152,7 @@ textarea{
     padding: 32px 32px 40px;
     gap: 8px;
     background-color: var(--blue);
-    width: 54vw;
+    width: 57vw;
     border-radius:var(--border-r-sc1);
 }
 .blue-text{
@@ -118,7 +163,7 @@ textarea{
     margin-top: 32px;
 }
 .screen1-textblock2{
-    padding: 20px 32px;
+    padding: 0 32px;
     background-color: var(--orange);
     width: 432px;
     border-radius:var(--border-r-sc1);
@@ -145,7 +190,7 @@ textarea{
     background-color: var(--blue);
     margin-left: 32px;
     border-radius: var(--border-r-sc1);
-    width: 80vw;
+    width: 84vw;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -160,7 +205,7 @@ textarea{
 }
 .conatiner-screen2 h1{
     font-size: 64px;
-    font-weight: 100;
+    font-weight: 400;
 }
 .screen2-line-item{
     display: flex;
@@ -175,7 +220,7 @@ textarea{
 }
 .screen2-line-item .h-4{
     font-size: 32px;
-    font-weight:200;
+    font-weight:400;
     line-height: 120%;
     margin-top: 16px;
 }
@@ -209,11 +254,13 @@ textarea{
 }
 .conatiner-screen3 .container-h1{
     font-size: 64px;
+    font-weight: 600;
 }
 .screen3-line-item{
     margin-top: 200px;
     display: flex;
     align-items: flex-end;
+    font-weight: 500;
 }
 .screen3-textblock1{
     flex-grow: 1;
@@ -272,6 +319,7 @@ textarea{
 }
 .conatiner-screen4 .container-h1{
     font-size: 96px;
+    font-weight: 600;
 }
 .screen4-line-item{
     display: flex;
@@ -286,6 +334,7 @@ details > summary{
     margin-top: 32px;
     font-size: 44px;
     border-radius: var(--border-r-sc4);
+    font-weight: 500;
 }
 summary:before {
     content: '\002B';
@@ -299,7 +348,7 @@ summary:before {
  details[open] summary:before {
     content: '\00D7';
  }
- /* --------------\2716------------------- */
+ /* ------------------------------------------- */
  .conatiner-screen5{
     margin-top: 200px;
     background-color: var(--blue);
@@ -313,14 +362,17 @@ summary:before {
  }
  .conatiner-screen5 .h-3{
     font-size: 96px;
+    font-weight: 600;
  }
  .conatiner-screen5 .h-4{
     font-size:32px;
+    font-weight: 400;
  }
 .conatiner-screen5 form{
     flex-grow: 1;
     display: flex;
     flex-direction: column;
+    font-weight: 500;
 }
 .conatiner-screen5 input{
     background-color: var(--white);
