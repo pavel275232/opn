@@ -414,7 +414,7 @@ summary:before {
  /* --------------------------------- */
  footer{
     margin-top: 100px;
-    padding:32px;
+    padding:32px 0;
     display: flex;
     justify-content: space-between;
     color: var(--light-blue);
