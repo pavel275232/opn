@@ -106,9 +106,6 @@ textarea{
     border-radius:var(--border-r-sc1);
     font-weight: 500;
 }
-.Oo{
-    fill: orange;
-}
 .header-logo{
     flex-grow: 1.7;
     font-size:var(--font-size-header);
