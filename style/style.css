@@ -63,6 +63,7 @@ body {
     font-family: 'Raleway', normal;
     background-color: var(--dark-blue);
     color: var(--white);
+    overflow-x:hidden;
 }
 
 a {
@@ -185,6 +186,12 @@ textarea {
     padding: 32px 0;
     font-size: 120px;
     font-weight: 600;
+}
+.container-text-block{
+    display: flex;
+    height: 80vh;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .screen1-textblock1 {
@@ -536,6 +543,7 @@ footer {
 }
 
 .d1:hover {
+    transition: .2s;
     color: var(--white);
 }
 
@@ -565,5 +573,6 @@ footer {
 }
 
 path:hover {
+    transition: .2s;
     fill: var(--white);
 }
