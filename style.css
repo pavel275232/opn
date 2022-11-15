@@ -41,7 +41,11 @@ textarea{
     background-color: var(--light-blue);
     border-radius: 8px;
   }
-  /* ------------------ */
+  .orange-text{
+    color: var(--orange);
+    font-weight: 700;
+  }
+  /* ------------------------------------------------------- */
 .container-page{
     margin: 32px 48px 0 48px;
 }
@@ -70,6 +74,7 @@ textarea{
 }
 .heder-nav-item:hover{
    text-decoration: underline;
+   text-underline-offset: 10px;
 }
 .btn-enter-container{
     flex-grow: 1.7;
@@ -102,7 +107,7 @@ textarea{
     padding: 32px 32px 40px;
     gap: 8px;
     background-color: var(--blue);
-    width: 53vw;
+    width: 54vw;
     border-radius:var(--border-r-sc1);
 }
 .blue-text{
@@ -152,10 +157,6 @@ textarea{
     margin-top: 200px;
     display: flex;
     flex-direction: column;
-}
-.conatiner-screen2 span{
-    color: var(--orange);
-    font-weight: 700;
 }
 .conatiner-screen2 h1{
     font-size: 64px;
@@ -287,7 +288,7 @@ details > summary{
     border-radius: var(--border-r-sc4);
 }
 summary:before {
-    content: "+";
+    content: '\002B';
     font-size:64px;
     font-weight: bold;
     margin: -5px 5px 0 0;
@@ -296,10 +297,9 @@ summary:before {
  }
   
  details[open] summary:before {
-    content: "-";
-    margin-top: 100px;
+    content: '\00D7';
  }
- /* --------------------------------- */
+ /* --------------\2716------------------- */
  .conatiner-screen5{
     margin-top: 200px;
     background-color: var(--blue);
