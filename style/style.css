@@ -43,7 +43,6 @@ body{
     font-family: 'Raleway', normal;
     background-color: var(--dark-blue);
     color: var(--white);
-    user-select: none;
 }
 a{
     color: inherit;
@@ -119,6 +118,7 @@ textarea{
     font-size: var(--font-size-header);
 }
 .heder-nav-item:hover{
+   transition-duration: 1s;
    text-decoration: underline;
    text-underline-offset: 10px;
 }
@@ -137,8 +137,9 @@ textarea{
     padding: 16px 32px;
 }
 .btn-enter:hover{
+    transition-timing-function:linear;
+    transition-duration: 0.2s;
     border: 1px solid var(--white);
-    transition: 0.5s;
 }
 /* ----------------------------------- */
 .conatiner-screen1{
@@ -180,13 +181,11 @@ textarea{
     font-size:44px;
     color: inherit;
     height: 100%;
-    width: 100%;
     cursor: pointer;
 }
 .screen1-textblock2:hover{
     transition: 0.5s;
     background-color: var(--light-blue);
-    box-shadow: inset 0 0 20px rgba(0,0,0,0.5);
 }
 .screen1-textblock3{
     background-color: var(--blue);
@@ -255,8 +254,9 @@ textarea{
     padding: 32px;
 }
 .conatiner-screen3 .container-h1{
-    font-size: 64px;
+    font-size: 96px;
     font-weight: 600;
+    line-height: 96px;
 }
 .screen3-line-item{
     margin-top: 200px;
@@ -329,6 +329,7 @@ textarea{
 }
 details > summary{
     list-style: none;
+    cursor: pointer;
 }
 .textblock4{
     background-color: var(--light-blue);
@@ -337,19 +338,27 @@ details > summary{
     font-size: 44px;
     border-radius: var(--border-r-sc4);
     font-weight: 500;
+    
 }
 summary:before {
-    content: '\002B';
-    font-size:64px;
+    content: '\FF0B';
+    font-size:72px;
     font-weight: bold;
-    margin: -5px 5px 0 0;
+    margin-top: 30px;
     position: absolute;
-    right: 100px;
+    right: 79.5px;
+    font-weight: 100;
+    line-height: 0;
+    transform: rotate(0);
+    transition: 0.5s;
  }
   
  details[open] summary:before {
-    content: '\00D7';
+    content: '\FF0B';
+    transform: rotate(45deg);
+    transition: 0.5s;
  }
+
  /* ------------------------------------------- */
  .conatiner-screen5{
     margin-top: 200px;
@@ -392,7 +401,7 @@ summary:before {
 #in3{
     border-radius: 8px;
     font-size: 32px;
-    padding: 16px;
+    padding: 8px;
     outline: none;
     border: none;
     margin-bottom: 16px;
@@ -403,14 +412,19 @@ summary:before {
     background-color: var(--orange);
     color: var(--white);
     font-size: 44px;
-    padding: 40px;
+    padding: 15px;
     border-radius: var(--border-r-sc5);
     border: none;
     cursor: pointer;
 }
+.conatiner-screen5 button:hover{
+    transition-timing-function: ease-out;
+    transition-duration: 0.2s;
+    background-color: var(--light-blue);
+}
  /* --------------------------------- */
  footer{
-    margin-top: 100px;
+    margin-top: 0px;
     padding:32px 0;
     display: flex;
     justify-content: space-between;
