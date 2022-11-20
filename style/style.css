@@ -613,34 +613,44 @@ footer{display: none;}
 
 /* ----------------------------------------------- */
 .conatiner-screen1 {
-    padding: 32px 0;
-    font-size:76px;
+    padding: 0 0;
+    font-size: 40px;
     font-weight: 600;
+}
+.bc-blue{
+    background-color: var(--blue);
+    border-radius: var(--border-r-sc1-576);
+    padding:1px 6px;
+}
+.blue1{
+    border-radius: 16px 16px 0 0;
+}
+.blue2{
+    border-radius: 16px 0 16px 16px;
 }
 .container-text-block{
     display: flex;
+    height: 100vh;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: flex-start;
+    margin-top: 6vh;
 }
 
 .screen1-textblock1 {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    align-items: flex-end;
+    align-items: flex-start;
     padding: 0 0 0 0;
-    gap: 8px;
+    gap: 0;
     background-color: var(--dark-blue);
-    width: 90vw;
     border-radius: var(--border-r-sc1);
+    text-align: left;
+    margin-top: 5vh;
+    width: 100%;
 }
-.bc-blue{
-    background-color: var(--blue);
-    border-radius: var(--border-r-sc1-576);
-    padding: 8px 16px 16px 16px;
-}
-.sc1-textb1-pb1 .blue-text{
-    margin-right: 50vw;
+.bri{
+    margin-right: 80%;
 }
 .blue-text {
     color: var(--light-blue);
@@ -648,37 +658,41 @@ footer{display: none;}
 
 .container-screen1-bot {
     display: flex;
-    margin-top: 32px;
+    margin-top: 0;
     flex-direction: column;
-    align-items: flex-end;
 }
 
 .screen1-textblock2 {
-    padding: 32px 48px ;
+    padding: 0 0;
     background-color: var(--orange);
     border-radius: var(--border-r-sc1);
-    margin-top: 5vh;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    font-size: 44px;
+    padding: 24px 0;
+    font-size: 16px;
     font-weight: 500;
+    width: 100%;
     order: 1;
+    margin-top: 5vh;
 }
 .screen1-textblock2:hover {
     transition: 0.5s;
     background-color: var(--light-blue);
 }
+
 .screen1-textblock3 {
     background-color: var(--dark-blue);
-    border-radius: var(--border-r-sc1);
     margin-left: 0;
+    border-radius: var(--border-r-sc1);
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
     align-items: flex-end;
-    justify-content:flex-end;
     padding: 0 0 0 0;
-    text-align: end;
+    text-align: right;
+    margin-top: 5vh;
+    width: 100%;
 }
 }
