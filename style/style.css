@@ -187,7 +187,7 @@ textarea {
 
 /* ----------------------------------- */
 .conatiner-screen1 {
-    padding: 32px 0;
+    padding: 0;
     font-size: 120px;
     font-weight: 600;
 }
@@ -575,6 +575,7 @@ path:hover {
 @media screen and (max-width:576px) {
 .container-page{
     margin: 0 24px;
+    overflow-x:hidden;
 }
 .container-header{
     position: sticky;
@@ -614,13 +615,13 @@ footer{display: none;}
 /* ----------------------------------------------- */
 .conatiner-screen1 {
     padding: 0 0;
-    font-size: 40px;
+    font-size: 44px;
     font-weight: 600;
 }
 .bc-blue{
     background-color: var(--blue);
     border-radius: var(--border-r-sc1-576);
-    padding:1px 6px;
+    padding:8px 6px;
 }
 .blue1{
     border-radius: 16px 16px 0 0;
@@ -648,6 +649,7 @@ footer{display: none;}
     text-align: left;
     margin-top: 5vh;
     width: 100%;
+    line-height: 150%;
 }
 .bri{
     margin-right: 80%;
@@ -671,7 +673,7 @@ footer{display: none;}
     justify-content: center;
     cursor: pointer;
     padding: 24px 0;
-    font-size: 16px;
+    font-size: 32px;
     font-weight: 500;
     width: 100%;
     order: 1;
@@ -694,5 +696,6 @@ footer{display: none;}
     text-align: right;
     margin-top: 5vh;
     width: 100%;
+    line-height: 150%;
 }
 }
