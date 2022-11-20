@@ -614,12 +614,11 @@ footer{display: none;}
 /* ----------------------------------------------- */
 .conatiner-screen1 {
     padding: 32px 0;
-    font-size: 76px;
+    font-size:76px;
     font-weight: 600;
 }
 .container-text-block{
     display: flex;
-    height: 100vh;
     flex-direction: column;
     justify-content: flex-end;
 }
