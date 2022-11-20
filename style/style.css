@@ -606,8 +606,7 @@ path:hover {
 .btn-enter{
 }
 /* ---------------------------------------------- */
-/* .conatiner-screen3{display: none;} */
-.conatiner-screen4{display: none;}
+/* .conatiner-screen4{display: none;} */
 .conatiner-screen5{display: none;}
 footer{display: none;}
 
@@ -837,6 +836,57 @@ footer{display: none;}
     background-color: var(--orange);
     padding: 8px 16px;
 }
+/* ------------------------------------------------------------- */
+.conatiner-screen4 {
+    margin-top: 5vh;
+}
 
+.conatiner-screen4 .container-h1 {
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.screen4-line-item {
+    display: flex;
+    flex-direction: column;
+}
+
+details>summary {
+    list-style: none;
+    cursor: pointer;
+}
+
+.textblock4 {
+    background-color: var(--light-blue);
+    padding: 16px 16px 20px;
+    margin-top: 16px;
+    font-size: 18px;
+    border-radius: var(--border-r-sc4);
+    font-weight: 500;
+}
+
+.h-5 {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+summary:before {
+    content: '\FF0B';
+    font-size: 40px;
+    font-weight: bold;
+    margin-top:10px;
+    position: absolute;
+    right: 25px;
+    font-weight: 100;
+    line-height: 0;
+    transform: rotate(0);
+    transition: 0.5s;
+}
+
+details[open] summary:before {
+    content: '\FF0B';
+    transform: rotate(45deg);
+    transition: 0.5s;
+}
 
 }
