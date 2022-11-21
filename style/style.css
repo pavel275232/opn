@@ -872,7 +872,7 @@ details>summary {
 
 summary:before {
     content: '\FF0B';
-    font-size: 40px;
+    font-size: 36px;
     font-weight: bold;
     margin-top:10px;
     position: absolute;
